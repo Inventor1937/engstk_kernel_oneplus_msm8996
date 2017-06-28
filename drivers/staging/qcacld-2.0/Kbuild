@@ -1564,6 +1564,9 @@ EXTRA_CFLAGS += $(call cc-disable-warning,unused-variable,)
 EXTRA_CFLAGS += $(call cc-disable-warning,unused-function,)
 EXTRA_CFLAGS += $(call cc-disable-warning,misleading-indentation,)
 
+# Also ensure the driver is always built with Os.
+EXTRA_CFLAGS += -Os
+
 # If the module name is not "wlan", then the define MULTI_IF_NAME to be the
 # same a the QCA CHIP name. The host driver will then append MULTI_IF_NAME to
 # any string that must be unique for all instances of the driver on the system.

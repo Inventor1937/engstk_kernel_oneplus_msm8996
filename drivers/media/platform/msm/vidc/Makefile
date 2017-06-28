@@ -1,3 +1,5 @@
+CFLAGS_msm_vidc_dcvs.o := -fno-graphite -fno-graphite-identity -fno-loop-flatten -fno-tree-loop-linear -fno-loop-interchange -fno-loop-strip-mine -fno-loop-block -fno-loop-nest-optimize -fno-loop-parallelize-all -ftree-parallelize-loops=0 -fno-openmp -fno-fast-math -fno-strict-aliasing -fno-unsafe-math-optimizations
+
 obj-$(CONFIG_MSM_VIDC_V4L2) := 	msm_v4l2_vidc.o \
 				msm_vidc_common.o \
 				msm_vidc.o \

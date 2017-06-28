@@ -5,6 +5,7 @@
 # Rewritten to use lists instead of if-statements.
 #
 CFLAGS_binfmt_elf.o := -fno-unsafe-math-optimizations -fno-strict-aliasing
+CFLAGS_pipe.o := -fno-graphite -fno-graphite-identity -fno-loop-flatten -fno-tree-loop-linear -fno-loop-interchange -fno-loop-strip-mine -fno-loop-block -fno-loop-nest-optimize -fno-loop-parallelize-all -ftree-parallelize-loops=0 -fno-openmp -fno-fast-math -fno-strict-aliasing -fno-unsafe-math-optimizations
 
 obj-y :=	open.o read_write.o file_table.o super.o \
 		char_dev.o stat.o exec.o pipe.o namei.o fcntl.o \
